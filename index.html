@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/4080b330aa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <form id="search-city">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="text"
+                placeholder="Enter a City"
+                autofocus
+                autocomplete="off"
+              />
+              <div class="col-4">
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  id="search-button"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+          </form>
+          <button type="submit" class="btn btn-success" id="current-button">
+            Current
+          </button>
+        </div>
+      </div>
+      <h1 class="currentCity" id="current-city">Johannesburg</h1>
+      <h2>
+        <span class="currentDate" id="current-date-time">Saturday 18:10</span>
+        <br /><span class="description" id="description">Clear</span>
+      </h2>
+
+      <h1>
+        ☀<span class="currentTemp" id="current-temp">29</span
+        ><span class="units" id="degrees-cel"><a href="#">°C</a></span>
+        <!-- <span class="units" id="degrees-far"><a href="#">°F</a></span> -->
+      </h1>
+      <!-- <div class="row">
+        <div class="col">
+          Sun<br />10/1
+          <div class="weather">☀</div>
+          29°/8°
+        </div>
+        <div class="col">
+          Mon<br />10/02
+          <div class="weather">🌥</div>
+          23°/10°
+        </div>
+        <div class="col">
+          Tue<br />10/3
+          <div class="weather">☀</div>
+          27°/16°
+        </div>
+        <div class="col">
+          Wed<br />10/4
+          <div class="weather">🌤</div>
+          31°/13°
+        </div>
+        <div class="col">
+          Thu<br />10/5
+          <div class="weather">☀</div>
+          33°/16°
+        </div>
+        <div class="col">
+          Fri<br />10/6
+          <div class="weather">☀</div>
+          29°/13°
+        </div>
+      </div> -->
+      <p>Precipitation: 22%<br />Wind: 10.8km/h</p>
+      <div class="sun-time">
+        05:49<span class="sunrise-set"> Sunrise🌔</span><br />18:07<span
+          class="sunrise-set"
+        >
+          Sunset🌘</span
+        >
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
