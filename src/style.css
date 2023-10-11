@@ -12,14 +12,33 @@ h1 {
   line-height: 80px;
   padding: 5px, 5px;
 }
-h1 .currentTemp {
-  padding: 15px, 15px;
-}
 
 h2 {
   line-height: 40px;
   position: relative;
   top: -20px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+p {
+  position: relative;
+  top: -225px;
+  left: 300px;
+  font-size: 20px;
+}
+
+footer {
+  font-size: 12px;
+  position: relative;
+  top: -120px;
+  color: black;
+}
+h1 .currentTemp {
+  padding: 15px, 15px;
 }
 
 .units {
@@ -29,10 +48,7 @@ h2 {
   left: 0px;
   text-decoration: none;
 }
-a {
-  text-decoration: none;
-  color: #ffff;
-}
+
 .currentCity {
   line-height: 40px;
   font-size: 40px;
@@ -80,13 +96,6 @@ a {
   margin: -52.5px 440px -10px 440px;
 }
 
-p {
-  position: relative;
-  top: -225px;
-  left: 300px;
-  font-size: 20px;
-}
-
 .weather {
   font-size: 35px;
 }
@@ -98,4 +107,9 @@ p {
 }
 .sunrise-set {
   font-weight: lighter;
+}
+
+.footerNote {
+  color: rgb(71, 30, 84);
+  text-decoration: underline;
 }
